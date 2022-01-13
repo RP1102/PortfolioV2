@@ -13,7 +13,8 @@ themeSwitcher.addEventListener("change", function(){
         body.style.color = "#F7F7F7"
         r.style.setProperty('--textColor', "#F7F7F7")
         r.style.setProperty('--themeContent',"rgba( 42, 42, 42, 1 )")
-        r.style.setProperty('--themeShadow',"0 8px 32px 0 rgba(  12, 12, 12 , 0.37 )")
+        // r.style.setProperty('--themeShadow',"0p 2px 8px 0 rgba(  12, 12, 12 , 0.37 )")
+        r.style.setProperty('--themeShadow',"rgba(99, 99, 99, 0.2) 0px 2px 8px 0px")
         r.style.setProperty('--gadgetColor', "rgb( 42, 42, 42)")
 
     }

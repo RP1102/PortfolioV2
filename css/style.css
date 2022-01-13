@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: all ease 0.5s;
 
 }
 :root{
@@ -24,7 +25,6 @@ body{
     overflow: hidden;
     background: var(--themeContent);
     color: var(--textColor);
-    /* font-family: 'Righteous', cursive; */
 }
 
 /* CE CODE PERMET DE RÉSOUDRE LE PROBLÈME D'OVERFLOW-X SUR MOBILE */

@@ -4,6 +4,9 @@
     /* border: 2px solid red; */
     /* filter: blur(0px);
     transition: filter 0.5s ease-in-out; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 header{
@@ -19,6 +22,7 @@ header{
 
 nav{
     /* background: rgba(247, 247, 247, 1); */
+    z-index: 10;
     background: var(--themeContent);
     box-shadow: var(--themeShadow);
     backdrop-filter: blur( 4px );
@@ -68,7 +72,7 @@ nav button:hover, nav button:active{
 #menu-btn{
     width: 32px;
     height: 32px;
-    z-index: 1;
+    z-index: 10;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -110,6 +114,44 @@ nav button:hover, nav button:active{
 .colors-container > button:hover{transform: scale(1.2);}
 .colors-container > button:active{transform: scale(0.98);}
 
+
+/* LE TEXTE DU MILIEU */
+.main-text{
+    align-self: center;
+    min-width: fit-content;
+    height: min-content;
+    overflow: hidden;
+}
+#titre{
+    animation: slideUp 1.7s ease forwards;
+    transition: 0.3s;
+}
+.titles:after { /* code pour le souligné vert */
+    display:block;
+    content: '';
+    border-bottom: solid 5px var(--color);  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+    z-index: 10;
+}
+.titles:hover:after { transform: scaleX(1); }
+@keyframes slideUp {
+    0%{
+        transform: translateY(200%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+div > p{font-size: 1.5rem;}
+p > span{color: var(--color);}
+
+
+/* LES VAGUES COLORÉES */
+.waves path{fill: var(--color);}
+
 .onLarge{display: none;}
 
 @media screen and (min-width: 900px){
@@ -120,11 +162,82 @@ nav button:hover, nav button:active{
     #menu-btn{display: none;}
 
     nav{
-        border: 2px solid red;
+        /* border: 2px solid red; */
         position: unset;
         box-shadow: unset;
         background: unset;
-        display: unset;
-        width: unset;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 650px;
     }
+    nav a{transition: color 0.3s ease;}
+    nav a::before{
+        content: "</";
+        /* color: var(--color); */
+        color: grey;
+    }
+    nav a::after{
+        content: ">";
+        /* color: var(--color); */
+        color: grey;
+    }
+    .main-text > p{font-size: 2rem;}
+    .main-text > h1{font-size: 3rem;}
+
+    /* PROGRESS BAR */
+    .progress-container{
+        position: fixed;
+        top: 50%;
+        right: 20px;
+        transform: translate(-0%,-50%);
+        width: 20px;
+        height: 200px;
+        background: var(--gadgetColor);
+        box-shadow: var(--themeShadow);
+        
+        backdrop-filter: blur( 4px );
+        border-radius: 24px;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        animation: 1s ease-out 0s 1 slideFromRight;
+    }
+
+
+    .progress-bar{
+        margin-top: 5px;
+        width: 10px;
+        height: 0;
+        max-height: 190px;
+        background-color: var(--color);
+        border-radius: 24px;
+        transition: background-color 0.5s ease;
+    }
+
+    /* COLOR CONTAINER */
+    /* .colors-container{
+        position: absolute;
+        width: 60px;
+        height: 200px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 24px;
+        z-index: 10;
+        
+    }
+    .colors-container > button{
+        cursor: pointer;
+        margin-left: 20px;
+        width: 30px;
+        height: 30px;
+        border-radius: 24px;
+        border: 3px solid var(--gadgetColor);
+        box-shadow: var(--themeShadow);
+        transition: all 0.3s ease-in-out;
+    
+    } */
 }
