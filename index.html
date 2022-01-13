@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romain Pontacq</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/themeSwitcher.css">
+
+</head>
+<body>
+    <div id="content">
+        <div id="home-page">
+            <header>
+                    <span id="logo">R<span>.</span></span>
+                    <nav id="navigation">
+                        <a href="#about" id="about-el">about</a>
+                        <a href="#project" id="proj-el">project</a>
+                        <a href="" id="contact-el">contact</a>
+                        <button>Resume</button>
+                        <div class="onSmall colors-container">
+                            <button id="green" onclick="toGreen()"></button>
+                            <button id="orange" onclick="toOrange()"></button>
+                            <button id="blue" onclick="toBlue()"></button>                                                     
+                        </div>
+                    </nav>
+                    <label class="onLarge switch">
+                        <input type="checkbox" class="onLarge">
+                        <span class="onLarge slider round"></span>
+                    </label>
+                    <span id="menu-btn" class="onSmall">
+                        <span class="part-of-btn"></span>
+                        <span class="part-of-btn"></span>
+                        <span class="part-of-btn"></span>
+                    </span>
+
+            </header>
+        </div>
+    </div>
+
+    
+    <script src="js/menuButton.js"></script>
+    <script src="js/themeSwitcher.js"></script>
+</body>
+</html>
