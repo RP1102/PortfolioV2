@@ -2,14 +2,19 @@
 let r = document.querySelector(':root')
 const homePage = document.getElementById("home-page")
 const menuBtn = document.getElementById("menu-btn")
+let menuIsOpen = false
 const nav = document.getElementById("navigation")
 menuBtn.addEventListener("click", function(){
-    if(nav.style.right === "0%"){
-        nav.style.right = "-100%"
+    if(!menuIsOpen){
+        nav.style.right = "0%"
+        menuBtn.classList.add('isOpen')
+        menuIsOpen = true
         // homePage.style.filter = "blur(0px)"
     }
     else{
-        nav.style.right = "0%"
+        nav.style.right = "-100%"
+        menuBtn.classList.remove('isOpen')
+        menuIsOpen = false
         // homePage.style.filter = "blur(3px)"
     }
 })
