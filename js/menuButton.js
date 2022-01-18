@@ -19,7 +19,19 @@ menuBtn.addEventListener("click", function(){
     }
 })
 
-// --- THIS IS THE CODE FOR THE 3 COLORED BUTTONS --- //
+//  THIS IS THE CODE FOR CLOSING THE MENU ON SCROLL AND ON CLICK OUTSIDE //
+let c = document.getElementById("content")
+c.addEventListener('scroll', function(){
+    if(menuIsOpen){
+        nav.style.right = "-100%"
+        menuBtn.classList.remove('isOpen')
+        menuIsOpen = false
+    }
+})
+
+
+
+//  THIS IS THE CODE FOR THE 3 COLORED BUTTONS  //
 function myFunction_set(color) {
     r.style.setProperty('--color', color)
   }
@@ -33,6 +45,4 @@ function myFunction_set(color) {
   function toOrange(){
       myFunction_set("#ff8b00")
   }
-  // --- END --- //
-
-  // -- THIS IS THE CODE FOR THE THEME SWITCHER ON MOBILE -- //
+  //  END  //

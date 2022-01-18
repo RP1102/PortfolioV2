@@ -6,14 +6,23 @@
     padding: 0;
     box-sizing: border-box;
     transition: all ease 0.5s;
+    scrollbar-width: none;
 
 }
 :root{
+    /* COULEURS */
     --color:#32c267;
     --textColor:#1B1B1B;
     --themeContent:rgba( 255, 255, 255, 1 );
     --themeShadow:0 8px 32px 0 rgba( 99, 99, 99, 0.37 );
     --gadgetColor:rgb( 255, 255, 255);
+
+    /* FONT SIZES */
+    --fz-sm: 14px;
+    --fz-lg: 18px;
+    --fz-xl: 22px;
+
+    /* AUTRES */
     scroll-behavior: smooth;
 }
 
@@ -22,13 +31,25 @@ body{
     width: 100%;
     height: 100%;
     font-family: 'Azeret Mono', monospace;
-    overflow: hidden;
     background: var(--themeContent);
     color: var(--textColor);
 }
 
 /* CE CODE PERMET DE RÉSOUDRE LE PROBLÈME D'OVERFLOW-X SUR MOBILE */
 #content{
+    height: 100vh;
+    width: 100%;
     position: relative;
     overflow-x: hidden;
+}
+
+
+@media screen and (min-width: 2000px){
+    .basic-text{font-size: var(--fz-xl);}
+}
+@media screen and (max-width: 2000px){
+    .basic-text{font-size: var(--fz-lg);}
+}
+@media screen and (max-width: 810px){
+    .basic-text{font-size: var(--fz-sm);}
 }

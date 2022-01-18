@@ -1,0 +1,25 @@
+.about{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+
+}
+#aboutwave{
+    position: absolute;
+    top: -1%;
+}
+.about-text{
+    position: absolute;
+    top: 30vw;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 600px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.about-text h1{font-size: 2rem;}
+.about-text p a {
+    color: var(--color);
+}
