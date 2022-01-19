@@ -18,8 +18,9 @@
     --gadgetColor:rgb( 255, 255, 255);
 
     /* FONT SIZES */
+    --fz-xs: 12px;
     --fz-sm: 14px;
-    --fz-lg: 18px;
+    --fz-lg: 16px;
     --fz-xl: 22px;
 
     /* AUTRES */
@@ -43,13 +44,36 @@ body{
     overflow-x: hidden;
 }
 
+/* 
+ICI JE VEUX QUE LES PAGES EN DESSOUS DE LA HOME PAGE
+AIENT LEUR CONTENU CENTRÉ 
+*/
+#articles-wrapper-wrapper{
+    height: 100%;
+    /* border: 5px dashed blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#articles-wrapper{
+    width: 1000px;
+    height: 100%;
+}
+
 
 @media screen and (min-width: 2000px){
     .basic-text{font-size: var(--fz-xl);}
+    div > ul li{font-size: var(--fz-xl);}
 }
 @media screen and (max-width: 2000px){
     .basic-text{font-size: var(--fz-lg);}
+    div > ul li{font-size: var(--fz-lg);}
 }
 @media screen and (max-width: 810px){
     .basic-text{font-size: var(--fz-sm);}
+    div > ul li{font-size: var(--fz-sm);}
+}
+@media screen and (max-width: 600px){
+    .basic-text{font-size: var(--fz-xs);}
+    div > ul li{font-size: var(--fz-xs);}
 }
