@@ -196,7 +196,7 @@ nav button:hover, nav button:active{
         opacity: 1;
     }
 }
-div > p{font-size: 1.5rem;}
+#greet{font-size: 1.5rem;}
 p > span{color: var(--color);}
 
 

@@ -1,21 +1,22 @@
 #aboutwave{
-    position: absolute;
+    position: relative;
     width: 100%;
-    top: 99vh;
+    top: -1%;
 }
 .about{
     position: relative;
-    height: 100%;
+    height: fit-content;
     width: 100%;
+    transform-origin: top;
+    /* border: 2px solid blue; */
 
 }
 
 .about-content{
     position: relative;
-    top: 15vw;
     height: 600px;
     width: 100%;
-    /* border: 2px solid blue; */
+    /* border: 2px solid brown; */
 
 }
 .about-text{
@@ -43,19 +44,21 @@
 
 }
 
+.tools h5{
+    font-weight: lighter;
+}
 
-ul{
+.about ul{
     padding-top: 10px;
     padding-left: 20px; 
     list-style-image: url(../assets/bulletArrow.svg);
 }
-li{
+.about  li{
     width: fit-content;
     line-height: 1.5;
     transition: transform 0.3s ease-in-out;
-
 }
-li:hover{transform: translateX(5px);}
+.about  li:hover{transform: translateX(5px);}
 
 /* BLOB */
 .about-image{
@@ -65,7 +68,17 @@ li:hover{transform: translateX(5px);}
     max-height: 700px;
     max-width: 700px;
 }
-.about-image svg path{fill: var(--color);}
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 1100px){
     .about-image{display: none;}
@@ -74,19 +87,22 @@ li:hover{transform: translateX(5px);}
         flex-direction: row;
         justify-content: center;
     }
-    .about-text{
-        padding-left: 20px;
-        background: var(--themeContent);
-        box-shadow: var(--themeShadow);
-        backdrop-filter: blur( 4px );
-        -webkit-backdrop-filter: blur( 4px );
-        border-radius: 10px;
+    .separator{
+        width: 100%;
+        height: 1px;
+        background-color: #ccc;
     }
     .tools{
         justify-content: space-evenly;
         gap: 0px;
     }
+    .tools > div{width: 40%;}
 
+}
+
+@media screen and (max-width: 800px){
+    .about{height: 100%;}
+    
 }
 
 @media screen and (max-width: 600px){
