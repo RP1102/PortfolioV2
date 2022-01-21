@@ -1,0 +1,44 @@
+#bottomWave{
+    position: relative;
+    top: 1px;
+}
+.socials{
+    position: relative;
+    width: 100%;
+    padding: 0px 20px;
+    height: 70px;
+    background-color: var(--color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#social-network-icons{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#social-network-icons svg:hover{
+    transform: scale(1.2);
+}
+.socials p{display: none;}
+#arrow-up-svg{display: none;}
+
+.toColor{
+    fill: var(--color);
+}
+
+@media screen and (min-width: 900px) {
+    .socials{justify-content: space-between;}
+    .socials p{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        display: initial;
+        font-size: 11px;
+        color: #F7F7F7;
+    }
+    #arrow-up-svg{display: initial;}
+    #arrow-up-svg:hover{transform: translateY(-10px);}
+}
