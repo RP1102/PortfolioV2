@@ -45,7 +45,16 @@
 }
 
 .tools h5{
+    /* color: #F7F7F7; */
+    color: var(--oppositeTextColor);
+    padding-left: 5px;
+    padding-right: 5px;
     font-weight: lighter;
+    background-color: var(--color);
+    width: fit-content;
+    /* filter: saturate(3); */
+    /* filter: grayscale(5%); */
+    filter: sepia(50%);
 }
 
 .about ul{

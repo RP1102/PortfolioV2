@@ -13,6 +13,7 @@
     /* COULEURS */
     --color:#32c267;
     --textColor:#1B1B1B;
+    --oppositeTextColor: #F7F7F7;
     --themeContent:rgba( 255, 255, 255, 1 );
     --themeShadow:0 8px 32px 0 rgba( 99, 99, 99, 0.37 );
     --gadgetColor:rgb( 255, 255, 255);

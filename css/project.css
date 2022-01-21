@@ -86,3 +86,8 @@
     .pcard h3 span{display: none;}
     .pcard footer{display: none;}
 }
+
+@media screen and (max-width: 420px){
+    .project h1 {font-size: 1.7rem;}
+    
+}
