@@ -61,9 +61,11 @@ AIENT LEUR CONTENU CENTRÉ
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 100px;
 }
 
 svg path{fill: var(--color);}
+
 
 @media screen and (min-width: 2000px){
     .basic-text{font-size: var(--fz-xl);}

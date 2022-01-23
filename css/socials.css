@@ -18,7 +18,7 @@
     display: flex;
     justify-content: space-between;
 }
-
+.toColor-with-theme{fill: var(--themeContent);}
 #social-network-icons svg:hover{
     transform: scale(1.2);
 }
@@ -37,7 +37,7 @@
         transform: translateX(-50%);
         display: initial;
         font-size: 11px;
-        color: #F7F7F7;
+        color: var(--oppositeTextColor);
     }
     #arrow-up-svg{display: initial;}
     #arrow-up-svg:hover{transform: translateY(-10px);}

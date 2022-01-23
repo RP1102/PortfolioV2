@@ -35,26 +35,34 @@ nav{
     justify-content: space-evenly;
     align-items: center;
     transition: right 0.5s cubic-bezier(.39,.58,.57,1);;
-    
 }
+
+
 a:link, a:visited{ color: inherit; text-decoration: none;}
 a:hover, a:focus{ color: var(--color);}
 
 nav button{
     width: 100px;
     height: 40px;
-    background-color: transparent;
-    color: var(--color);
+    background-color: var(--color);
+    background-position: center;
+    color: #F7F7F7;
     font-family: 'Azeret Mono', monospace;
     font-size: 1rem;
-    border: 2px solid var(--color);
+    border: none;
     border-radius: 12px;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    transition: background 0.8s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
-nav button:hover, nav button:active{
+#resume:hover{
     color:#F7F7F7;
-    background-color: var(--color);
+    background: var(--color) radial-gradient(circle, transparent 1%, var(--color) 1%) center/15000%;
+}
+#resume:active{
+    background-color: #F7F7F7 ;
+    background-size: 100%;
+    transition: background 0s;
 }
 
 /* THEME SWITCHER SMALL SCREEN VERSION */
@@ -253,7 +261,7 @@ p > span{color: var(--color);}
         color: grey;
     }
     .main-text{margin-bottom: 50px;}
-    .main-text > p{font-size: 2rem;}
+    #greet{font-size: 2rem;}
     .main-text > h1{font-size: 3rem;}
     .waves{
         position: absolute;

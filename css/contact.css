@@ -15,16 +15,20 @@
     gap: 20px;
 }
 .contact-content h1{font-size: 2rem;}
+.contact-content p{max-width: 800px;}
+.contact-content a{width: fit-content; margin-top: 30px;}
 .contact-content button{
+    cursor: pointer;
     position: relative;
     width: 160px;
     height: 60px;
     border: 2px solid var(--color);
     border-radius: 12px;
     color: #f7f7f7;
-    background-color: var(--color);
+    background: var(--color) radial-gradient(circle, transparent 1%, var(--color) 1%) center/15000%;
     font-size: var(--fz-lg);
     overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 
 }
 .contact-content button::before{
@@ -46,6 +50,13 @@
 }
 
 
+.contact-content button:active{
+    background-color: #F7F7F7 ;
+    background-size: 100%;
+    transition: background 0s;
+}
+
+
 @media screen and (min-width: 900px) {
     .contact-content button{
         background-color: transparent;
@@ -59,7 +70,7 @@
     .contact-content button:hover{
         cursor: pointer;
         color: #f7f7f7;
-        background-color: var(--color);
+        background: var(--color) radial-gradient(circle, transparent 1%, var(--color) 1%) center/15000%;
         
     }
     
