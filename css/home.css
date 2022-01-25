@@ -251,12 +251,12 @@ p > span{color: var(--color);}
         justify-content: space-evenly;
         width: 650px;
     }
-    nav a{transition: color 0.3s ease;}
-    nav a::before{
+    .navLinks{transition: color 0.3s ease;}
+    .navLinks::before{
         content: "</";
         color: grey;
     }
-    nav a::after{
+    .navLinks::after{
         content: ">";
         color: grey;
     }
