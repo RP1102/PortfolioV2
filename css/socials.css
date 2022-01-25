@@ -20,9 +20,8 @@
     justify-content: space-between;
 }
 .toColor-with-theme{fill: var(--themeContent);}
-#social-network-icons svg:hover{
-    transform: scale(1.2);
-}
+#social-network-icons svg{transition: transform 0.2s ease-in-out;}
+#social-network-icons svg:hover{transform: scale(1.2);}
 .socials p{display: none;}
 #arrow-up-svg{display: none;}
 
@@ -40,6 +39,6 @@
         font-size: 11px;
         color: var(--oppositeTextColor);
     }
-    #arrow-up-svg{display: initial;}
+    #arrow-up-svg{display: initial; transition: transform 0.2s ease-in-out;}
     #arrow-up-svg:hover{transform: translateY(-10px);}
 }

@@ -23,8 +23,8 @@ nav{
     z-index: 10;
     background: var(--themeContent);
     box-shadow: var(--themeShadow);
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
+    /* backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px ); */
     position: absolute;
     right: -100%;
     top: 0%;
@@ -69,8 +69,8 @@ nav button{
 #themeSwitcherMobile{display: none;}
 #mobile-switch-wrapper{
     box-shadow: var(--themeShadow);
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
+    /* backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px ); */
     position: absolute;
     left: 20px;
     top: 20px;
@@ -109,7 +109,8 @@ nav button{
     font-size: 3rem;
 }
 #logo > span{
-    color: var(--color);
+    color: var(--color); 
+    transition: color 0.5s ease-in-out;
 }
 
 /* BOUTON DE MENU POUR MOBILE */
@@ -121,6 +122,7 @@ nav button{
     flex-direction: column;
     justify-content: space-around;
     cursor: pointer;
+    transition: all 0.5s ease-in-out;
 }
 .part-of-btn{
     width: 100%;
@@ -128,10 +130,11 @@ nav button{
     background-color: var(--textColor);
     border-radius: 12px;
 }
-#snd{transform: scaleX(0.70);}
-#trd{transform: scaleX(0.50);}
+#snd{transform: scaleX(0.70); transition: all 0.5s ease-in-out;}
+#trd{transform: scaleX(0.50); transition: transform 0.5s ease-in-out;}
 
 /* ANIMATION À L'OUVERTURE DU MENU MOBILE */
+#fst{transition: transform 0.5s ease-in-out;}
 #menu-btn.isOpen #fst{
     transform: translateY(11px) rotate(45deg);
 }
@@ -211,7 +214,7 @@ p > span{color: var(--color);}
 
 
 /* LES VAGUES COLORÉES */
-.waves path{fill: var(--color);}
+.waves path{fill: var(--color); transition: fill 0.5s ease-in-out;}
 @keyframes animateWave {
     0% {
       transform: scale(1,0);
@@ -251,7 +254,7 @@ p > span{color: var(--color);}
         justify-content: space-evenly;
         width: 650px;
     }
-    .navLinks{transition: color 0.3s ease;}
+    .navLinks{transition: color 0.2s ease;}
     .navLinks::before{
         content: "</";
         color: grey;
@@ -261,7 +264,7 @@ p > span{color: var(--color);}
         color: grey;
     }
     .main-text{margin-bottom: 50px;}
-    #greet{font-size: 2rem;}
+    #greet{font-size: 2rem; transition: color 0.5s ease-in-out;}
     .main-text > h1{font-size: 3rem;}
     .waves{
         position: absolute;
@@ -278,12 +281,13 @@ p > span{color: var(--color);}
         height: 200px;
         background: var(--gadgetColor);
         box-shadow: var(--themeShadow);
-        backdrop-filter: blur( 4px );
+        /* backdrop-filter: blur( 4px ); */
         border-radius: 24px;
         z-index: 10;
         display: flex;
         justify-content: center;
-        animation: fadeInFromRight 2.5s ease-out forwards
+        animation: fadeInFromRight 2.5s ease-out forwards;
+        transition: background-color 0.2s ease-in-out;
         
     }
     .progress-bar{
@@ -303,14 +307,13 @@ p > span{color: var(--color);}
 
     .colors-container{
         position: absolute;
+        display: flex;
+        flex-direction: column;
         width: 60px;
         height: 200px;
         top: 50%;
         left: -30%;
-        transform: translateY(-50%);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        transform: translate(0%,-50%);
         animation: fadeInFromLeft 2.5s ease-out forwards
     }
     
