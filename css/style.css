@@ -5,8 +5,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* transition: all ease 0.2s; */
     scrollbar-width: none;
+    scroll-behavior: smooth;
 }
 
 .example::-webkit-scrollbar {

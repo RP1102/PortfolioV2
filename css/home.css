@@ -97,7 +97,8 @@ nav button{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-#moon{top: -100%;}
+#sun{transition: top 0.3s ease-in-out;}
+#moon{top: -100%; transition: top 0.3s ease-in-out;}
 #moon path{fill: var(--color);}
 #sun path{fill: var(--color);}
 
@@ -207,8 +208,8 @@ nav button{
         opacity: 1;
     }
 }
-#greet{font-size: 1.5rem;}
-p > span{color: var(--color);}
+#greet{font-size: 1.5rem; }
+p > span{color: var(--color); transition: color 0.5s ease-in-out;}
 
 
 
@@ -287,7 +288,7 @@ p > span{color: var(--color);}
         display: flex;
         justify-content: center;
         animation: fadeInFromRight 2.5s ease-out forwards;
-        transition: background-color 0.2s ease-in-out;
+        transition: background-color 0.3s ease;
         
     }
     .progress-bar{
