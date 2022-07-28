@@ -57,13 +57,14 @@
     z-index: 40;
     fill: inherit;
     max-width: 60px;
+    max-height: 60px;
     transition: transform ease-in-out 0.15s;
-    border: 2px solid var(--color);
-    border-radius: 10px;
-    /* box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    border-radius: 10px; */
+}
+.skills svg path{
+    fill: var(--oppositeTextColor);
+}
+.skills svg rect{
+    fill: var(--color);
 }
 .skills svg:hover{
     transform: scale(1.2);
