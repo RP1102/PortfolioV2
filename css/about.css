@@ -76,15 +76,19 @@
 .skills li:hover{
     transform: scale(1.2);
 }
-/* .skills svg path{
-    fill: var(--oppositeTextColor);
+
+.skills svg{
+    height: 50px;
+    width: 50px;
 }
-.skills svg rect{
-    fill: var(--color);
+
+.skills svg path{
+    fill: none;
 }
-.skills svg:hover{
-    transform: scale(1.2);
-} */
+
+.skills .point{
+    fill : #61DAFB
+}
 
 
 
