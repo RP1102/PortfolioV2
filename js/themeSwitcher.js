@@ -21,11 +21,11 @@ tsBigScreen.addEventListener("change", function(){
 
     }
     else{
-        body.style.backgroundColor = "rgba(247, 247, 247, 1)"
+        body.style.backgroundColor = "#FFF"
         body.style.color = "#1b1b1b"
         r.style.setProperty('--textColor', "#1b1b1b")
         r.style.setProperty('--oppositeTextColor', "#F7F7F7")
-        r.style.setProperty('--themeContent', "rgba( 255, 255, 255, 1 )")
+        r.style.setProperty('--themeContent', "#FFF")
         r.style.setProperty('--themeShadow',"rgba(99, 99, 99, 0.2) 0px 2px 8px 0px")
         r.style.setProperty('--gadgetColor', "rgb( 255, 255, 255)")
         tsMobile.checked = false
@@ -45,12 +45,12 @@ tsMobile.addEventListener("change", function(){
 
     }
     else{
-        body.style.backgroundColor = "rgba(247, 247, 247, 1)"
+        body.style.backgroundColor = "#FFF"
         // body.style.backgroundColor = "#eeedff"
         body.style.color = "#1b1b1b"
         r.style.setProperty('--textColor', "#1b1b1b")
         r.style.setProperty('--oppositeTextColor', "#F7F7F7")
-        r.style.setProperty('--themeContent', "rgba( 255, 255, 255, 1 )")
+        r.style.setProperty('--themeContent', "#FFF")
         r.style.setProperty('--themeShadow',"rgba(99, 99, 99, 0.2) 0px 2px 8px 0px")
         r.style.setProperty('--gadgetColor', "rgb( 255, 255, 255)")
         tsBigScreen.checked = false
